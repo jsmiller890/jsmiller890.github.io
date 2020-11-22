@@ -1,3 +1,6 @@
+## Welcome to my E-Portfolio
+In this repository is my final project for my capstone class. This project is an extension of one of my classes that had me build a class registrar with basic functionality. My idea for this project is to add database functionality along with more complex algorithms and create a data structure. Instead of just having student accounts that can register for classes a new feature will be added to allow admministrators to add and edit students (and other admins), classes and change which classes students are registered for. In this instance the administrator will be able to register a student into any class they want, bypassing the prerequisites of the course.
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/jsmiller890/jsmiller890.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
