@@ -1,0 +1,27 @@
+﻿<Window x:Class="WPFRegisterStudent.AdminAddDropWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFRegisterStudent"
+        mc:Ignorable="d"
+        Title="AdminAddDropWindow" Height="567.551" Width="964.388">
+    <Grid>
+        <ListBox x:Name="studentlistbox" HorizontalAlignment="Left" Height="199" Margin="60,28,0,0" VerticalAlignment="Top" Width="308" SelectionChanged="Studentlistbox_SelectionChanged"/>
+        <ListBox x:Name="addclasslistbox" HorizontalAlignment="Left" Height="174" Margin="60,272,0,0" VerticalAlignment="Top" Width="308" SelectionChanged="Addclasslistbox_SelectionChanged"/>
+        <ListBox x:Name="dropclasslistbox" HorizontalAlignment="Left" Height="174" Margin="556,272,0,0" VerticalAlignment="Top" Width="308" SelectionChanged="Dropclasslistbox_SelectionChanged"/>
+        <Button x:Name="addBtn" Content="Add Class" HorizontalAlignment="Left" Margin="136,473,0,0" VerticalAlignment="Top" Width="156" Height="38" Click="AddBtn_Click"/>
+        <Button x:Name="dropBtn" Content="Drop Class" HorizontalAlignment="Left" Margin="644,473,0,0" VerticalAlignment="Top" Width="172" Height="38" Click="DropBtn_Click"/>
+        <Label x:Name="label3" Content="" HorizontalAlignment="Left" Margin="424,197,0,0" VerticalAlignment="Top" Width="337" Foreground="#FFEE0E0E" Height="30"/>
+        <Label x:Name="courseIdlabel" Content="Course ID:" HorizontalAlignment="Left" Margin="391,38,0,0" VerticalAlignment="Top" Height="31" Width="79"/>
+        <TextBlock x:Name="courseIdtxtblk" HorizontalAlignment="Left" Margin="490,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="    " Height="25" Width="96"/>
+        <Label x:Name="credithourlabel" Content="Credit Hours:" HorizontalAlignment="Left" Margin="767,191,0,0" VerticalAlignment="Top" Height="31" Width="97"/>
+        <TextBlock x:Name="credithourstxtblk" HorizontalAlignment="Left" Margin="891,197,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="19" Width="8"/>
+        <Label x:Name="coursedesclabel" Content="Course Description:" HorizontalAlignment="Left" Margin="622,38,0,0" VerticalAlignment="Top" Height="31" Width="139"/>
+        <TextBlock x:Name="coursedesctxtblk" HorizontalAlignment="Left" Margin="391,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="       " Height="78" Width="524"/>
+        <Label x:Name="seatsleftlabel" Content="Seats Remaining" HorizontalAlignment="Left" Margin="766,152,0,0" VerticalAlignment="Top" Height="31" Width="119"/>
+        <TextBlock x:Name="seatsremainingtxtblk" HorizontalAlignment="Left" Margin="891,158,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="19" Width="8"/>
+        <Button x:Name="closebtn" Content="Close" HorizontalAlignment="Left" Margin="424,473,0,0" VerticalAlignment="Top" Width="103" Height="38" Click="Closebtn_Click"/>
+
+    </Grid>
+</Window>

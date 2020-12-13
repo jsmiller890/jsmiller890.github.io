@@ -1,0 +1,27 @@
+﻿<Window x:Class="WPFRegisterStudent.EditStudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFRegisterStudent"
+        mc:Ignorable="d"
+        Title="EditStudentWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="firstnamelabel" Content="First Name" HorizontalAlignment="Left" Margin="410,38,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lastnamelabel" Content="Last Name" HorizontalAlignment="Left" Margin="410,84,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="addresslabel" Content="Address" HorizontalAlignment="Left" Margin="410,133,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="emaillabel" Content="E-mail" HorizontalAlignment="Left" Margin="410,185,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="passwordlabel" Content="Password" HorizontalAlignment="Left" Margin="410,234,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="firstnametxtbox" HorizontalAlignment="Left" Height="23" Margin="565,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" IsReadOnly="True"/>
+        <TextBox x:Name="lastnametxtbox" HorizontalAlignment="Left" Height="23" Margin="565,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" IsReadOnly="True"/>
+        <TextBox x:Name="addresstxtbox" HorizontalAlignment="Left" Height="23" Margin="565,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="emailtxtbox" HorizontalAlignment="Left" Height="23" Margin="565,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" IsReadOnly="True" Text="@snhu.edu"/>
+        <TextBox x:Name="passwordtxtbox" HorizontalAlignment="Left" Height="23" Margin="565,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <CheckBox x:Name="Admincheckbox" Content="Administrator" HorizontalAlignment="Left" Margin="565,329,0,0" VerticalAlignment="Top" Checked="Admincheckbox_Checked" Unchecked="Admincheckbox_Unchecked"/>
+        <ListBox x:Name="studentListbox" HorizontalAlignment="Left" Height="344" Margin="29,41,0,0" VerticalAlignment="Top" Width="354" Grid.ColumnSpan="2" SelectionChanged="StudentListbox_SelectionChanged"/>
+        <Button x:Name="savebtn" Content="Save" HorizontalAlignment="Left" Margin="443,380,0,0" VerticalAlignment="Top" Width="75" Click="Savebtn_Click"/>
+        <Button x:Name="cancelbtn" Content="Cancel" HorizontalAlignment="Left" Margin="680,380,0,0" VerticalAlignment="Top" Width="75" Click="Cancelbtn_Click"/>
+        <Button x:Name="adddropbtn" Content="Add/Drop Classes" HorizontalAlignment="Left" Margin="548,380,0,0" VerticalAlignment="Top" Width="110" Click="Adddropbtn_Click"/>
+
+    </Grid>
+</Window>
